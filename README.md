@@ -2,7 +2,7 @@
 This is one stop repository for getting knowledge of Revolt RV400 immobilizer.
 
 the basic idea of this immobalizer is
-Convert 85V to usable 5V for RF reciever and immobalizer ICC and 12 volts for DC to DC converter i.e., for Key switch and LED.
+Convert 85V to usable 5V for RF reciever. # it dont convert to 12v., instead 12v are recieved from DC-DC converter.
 then RF reciever recieves 4 signals from key., start,lock,unlock and locate.
 those signals are then forwarded to Immobalizer IC according to press of button.
 1) when power button is pressed on keyfob, the RF reciver recieves the signal, forward it to IC and ic then latches that signal to 2 MOSFETs, one to BMS controller and one to Signal wire.
@@ -15,7 +15,7 @@ the RF reciever is very rare to fail, but Main board can.
 more about RF reciver used in Immobalizer with circuit diagram: [MICRF229.pdf](https://github.com/sid8840/RV400-immobalizer/files/11966820/MICRF229.pdf).
 i dont find the any info regarding Immobalizer ic used in main PCB.
 
-
+![Pin out](https://github.com/sid8840/RV400-immobalizer/assets/83544106/392a83ca-8936-4d40-844f-838b1a4b5143)
 ![06-07-2023 (14 46 08)](https://github.com/sid8840/RV400-immobalizer/assets/83544106/158cc7fd-3c00-4427-aa0d-755b4e64cdb1)
 ![06-07-2023 (14 45 56)](https://github.com/sid8840/RV400-immobalizer/assets/83544106/7479f229-dce4-4906-8176-ca6d9159fedc)
 ![06-07-2023 (14 45 25)](https://github.com/sid8840/RV400-immobalizer/assets/83544106/4e9ac10c-11da-494e-9f76-57f24f659624)
